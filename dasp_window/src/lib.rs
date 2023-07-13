@@ -16,7 +16,6 @@
 //! To enable all of the above features in a `no_std` context, enable the **all-no-std** feature.
 
 #![cfg_attr(not(feature = "std"), no_std)]
-#![cfg_attr(not(feature = "std"), feature(core_intrinsics))]
 
 #[cfg(feature = "hann")]
 pub use hann::Hann;

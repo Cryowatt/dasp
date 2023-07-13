@@ -4,7 +4,7 @@ pub mod f32 {
 
     #[cfg(not(feature = "std"))]
     pub fn sqrt(x: f32) -> f32 {
-        unsafe { core::intrinsics::sqrtf32(x) }
+        num_traits::Float::sqrt(x)
     }
     #[cfg(feature = "std")]
     pub fn sqrt(x: f32) -> f32 {
@@ -18,7 +18,7 @@ pub mod f64 {
 
     #[cfg(not(feature = "std"))]
     pub fn sqrt(x: f64) -> f64 {
-        unsafe { core::intrinsics::sqrtf64(x) }
+        num_traits::Float::sqrt(x)
     }
     #[cfg(feature = "std")]
     pub fn sqrt(x: f64) -> f64 {

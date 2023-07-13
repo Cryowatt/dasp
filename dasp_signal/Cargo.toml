@@ -19,6 +19,7 @@ dasp_ring_buffer = { version = "0.11", path = "../dasp_ring_buffer", default-fea
 dasp_rms = { version = "0.11", path = "../dasp_rms", default-features = false, optional = true }
 dasp_sample = { version = "0.11", path = "../dasp_sample", default-features = false }
 dasp_window = { version = "0.11", path = "../dasp_window", default-features = false, optional = true }
+num-traits = { version = "0.2", default-features = false, features = ["libm"] }
 
 [dev-dependencies]
 dasp_envelope = { version = "0.11", path = "../dasp_envelope", default-features = false, features = ["peak"] }
